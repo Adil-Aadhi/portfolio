@@ -1,0 +1,219 @@
+.first-section{
+    background:linear-gradient(to right,black,rgb(79, 0, 0),black)
+}
+.container{
+    background:linear-gradient(to right,black,rgb(79, 0, 0),black)
+
+}
+.nav-link{
+    color:antiquewhite;
+    justify-content: space-between;
+    margin-right: 80px;
+    transition:ease,color 0.1s,font-weight 0.1s;
+}
+
+.nav-link:hover{
+  color:#ffffff;
+  font-weight: bold;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #c31d1d, #ff5858);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   opacity: 0;
+  transform: translateX(-100px);
+  animation: slideInWithGlow 2.2s ease-out forwards, gradientMove 5s ease-in-out infinite;
+}
+
+@keyframes slideInWithGlow {
+  0% {
+    opacity: 0.8;
+    transform: translateX(-100px);
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(10px);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    text-shadow: none;
+  }
+}
+
+
+
+.gradient-text1 {
+  background: linear-gradient(90deg, #c31d1d, #e19b9b, #d3d0d0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 50px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.second-section{
+    background:linear-gradient(to bottom,rgb(17, 0, 0),black,black,rgb(57, 56, 56));
+    /* background:linear-gradient(to bottom,rgb(17, 0, 0),black,black,black,rgb(238, 17, 112)); */
+    /* background:linear-gradient(to bottom,rgb(79, 0, 0),black,black,black); */
+    /* background:linear-gradient(to bottom,rgb(17, 0, 0),black,black,black,rgb(238, 17, 112)); */
+}
+.center-wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+.nav-tabs {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-right: 1rem;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-tabs .nav-link {
+  white-space: nowrap;
+  font-size: 0.95rem;
+  padding: 6px 8px;
+  flex-shrink: 0;
+}
+.third-section{
+  /* background:linear-gradient(to bottom,rgb(57, 56, 56),black,black,black,black); */
+  background:linear-gradient(to bottom,rgb(57, 56, 56),black);
+}
+.card{
+  transition: transform 0.5s ease,background-color 0.5s,color 0.5s;
+}
+.card:hover{
+  transform:scale(1.1,1.1);
+  background-color: black;
+  color: white;
+}
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 180px !important;
+  }
+}
+#contact_section{
+  border-top:1px solid white;
+  background:linear-gradient(to bottom,black,rgb(79, 0, 0),black)
+  /* background-color: black; */
+}
+#form{
+  border-left: 1px solid white;
+  font-size:small
+}
+.form-control{
+  font-family: popins;
+  background-color: #515050;
+  transition: transform 0.5s ease,background-color 0.5s,color 0.5s;
+  color:#000000
+}
+.form-control::placeholder{
+  color:rgb(255, 255, 255,0.5)
+}
+
+
+  .nav-tabs .nav-link:hover {
+    color: #fd0d51;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-control:hover{
+      transform:scale(1.1,1.1);
+      background-color: black;
+      color:#ffffff
+  }
+
+  .form-control:focus{
+    background-color: black;
+    color:#ffffff
+  }
+
+  .btn{
+    transition:ease,border-color 0.6s;
+  }
+  .btn:hover{
+    border-color: #fbf6fb;
+  }
+
+   .bi-instagram{
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .bi-instagram:hover{
+      color: #e1306c;
+      transform: scale(1.2);
+    }
+
+
+   .bi-facebook{
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .bi-facebook:hover{
+      color: #3c01d0;
+      transform: scale(1.2);
+    }
+
+   .bi-linkedin{
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .bi-linkedin:hover{
+      color: #3c01d0;
+      transform: scale(1.2);
+    }
+
+   .bi-telegram{
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .bi-telegram:hover{
+      color: #000000;
+      transform: scale(1.2);
+    }
+
+   .bi-whatsapp{
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .bi-whatsapp:hover{
+      color: #01764d;
+      transform: scale(1.2);
+    }
+
+    .social-icon{
+       text-decoration: none;
+    }
+
+    .progress-bar {
+    width: 0;
+    transition: width 1.5s ease-in-out;
+  }
+
+  .progress-bar.animate {
+    width: var(--target-width);
+  }
+  #skill_section{
+    background-color: rgb(57, 56, 56);
+  }
+
+  #skill_bar:hover{
+    transform: scale(1.2);
+  }
